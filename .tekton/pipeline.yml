@@ -52,17 +52,17 @@ spec:
           workspace: pipeline-workspace
 
     # 4. test - unit tests with nose
-    - name: nose-test
+    - name: run-unit-tests-with-nose
       runAfter: ["flake8"]
       taskRef:
-        name: nose-test
+        name: run-unit-tests-with-nose
       workspaces:
         - name: output
           workspace: pipeline-workspace
 
     # 5. build - build the container image with buildah
     - name: buildah
-      runAfter: ["nose-test"]
+      runAfter: ["run-unit-tests-with-nose"]
       taskRef:
         name: buildah
         kind: ClusterTask

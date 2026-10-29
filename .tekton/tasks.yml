@@ -38,12 +38,13 @@ spec:
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: nose-test
+  name: run-unit-tests-with-nose
 spec:
   workspaces:
     - name: output
   steps:
-    - name: nose-test
+    # Run unit tests with nose
+    - name: run-unit-tests-with-nose
       image: python:3.9-slim
       workingDir: $(workspaces.output.path)
       script: |
