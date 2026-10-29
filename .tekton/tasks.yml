@@ -19,6 +19,25 @@ spec:
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
+  name: flake8
+spec:
+  workspaces:
+    - name: output
+  steps:
+    - name: flake8
+      image: python:3.9-slim
+      workingDir: $(workspaces.output.path)
+      script: |
+        #!/bin/sh
+        set -e
+        pip install --upgrade pip
+        pip install flake8
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+---
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
   name: nose-test
 spec:
   workspaces:

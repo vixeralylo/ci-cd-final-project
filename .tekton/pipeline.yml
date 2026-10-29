@@ -1,0 +1,90 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: oc-pipelines-oc-final
+spec:
+  params:
+    - name: repo-url
+      type: string
+      description: The git repository URL to clone from.
+    - name: branch-name
+      type: string
+      description: The git branch to clone.
+      default: main
+    - name: image-name
+      type: string
+      description: Name of the image to build and push.
+
+  workspaces:
+    - name: pipeline-workspace
+
+  tasks:
+    # 1. cleanup - wipe the shared workspace before a fresh run
+    - name: cleanup
+      taskRef:
+        name: cleanup
+      workspaces:
+        - name: output
+          workspace: pipeline-workspace
+
+    # 2. git-clone - pull the source code from GitHub
+    - name: git-clone
+      runAfter: ["cleanup"]
+      taskRef:
+        name: git-clone
+        kind: ClusterTask
+      workspaces:
+        - name: output
+          workspace: pipeline-workspace
+      params:
+        - name: url
+          value: $(params.repo-url)
+        - name: revision
+          value: $(params.branch-name)
+
+    # 3. lint - static analysis with flake8
+    - name: flake8
+      runAfter: ["git-clone"]
+      taskRef:
+        name: flake8
+      workspaces:
+        - name: output
+          workspace: pipeline-workspace
+
+    # 4. test - unit tests with nose
+    - name: nose-test
+      runAfter: ["flake8"]
+      taskRef:
+        name: nose-test
+      workspaces:
+        - name: output
+          workspace: pipeline-workspace
+
+    # 5. build - build the container image with buildah
+    - name: buildah
+      runAfter: ["nose-test"]
+      taskRef:
+        name: buildah
+        kind: ClusterTask
+      workspaces:
+        - name: source
+          workspace: pipeline-workspace
+      params:
+        - name: IMAGE
+          value: $(params.image-name)
+
+    # 6. deploy - deploy the new image with the openshift-client
+    - name: deploy
+      runAfter: ["buildah"]
+      taskRef:
+        name: openshift-client
+        kind: ClusterTask
+      workspaces:
+        - name: manifest-dir
+          workspace: pipeline-workspace
+      params:
+        - name: SCRIPT
+          value: |
+            oc set image deployment/hello-world hello-world=$(params.image-name) || \
+            oc new-app $(params.image-name) --name=hello-world
+            oc rollout status deployment/hello-world
