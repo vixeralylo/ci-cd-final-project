@@ -1,0 +1,216 @@
+build-and-test	Set up job	﻿2026-10-29T14:59:45.7654943Z Current runner version: '2.338.0'
+build-and-test	Set up job	2026-10-29T14:59:45.7681303Z ##[group]Runner Image Provisioner
+build-and-test	Set up job	2026-10-29T14:59:45.7682271Z Hosted Compute Agent
+build-and-test	Set up job	2026-10-29T14:59:45.7682811Z Version: 20261021.618
+build-and-test	Set up job	2026-10-29T14:59:45.7683368Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+build-and-test	Set up job	2026-10-29T14:59:45.7684087Z Build Date: 2026-10-21T00:45:21Z
+build-and-test	Set up job	2026-10-29T14:59:45.7684698Z Worker ID: {225fd6d6-e349-476a-a45f-076072f16815}
+build-and-test	Set up job	2026-10-29T14:59:45.7685376Z Region: eastus3
+build-and-test	Set up job	2026-10-29T14:59:45.7685885Z Cloud: Azure
+build-and-test	Set up job	2026-10-29T14:59:45.7686396Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T14:59:45.7687874Z ##[group]Operating System
+build-and-test	Set up job	2026-10-29T14:59:45.7688458Z Ubuntu
+build-and-test	Set up job	2026-10-29T14:59:45.7688996Z 24.04.5
+build-and-test	Set up job	2026-10-29T14:59:45.7689848Z LTS
+build-and-test	Set up job	2026-10-29T14:59:45.7690336Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T14:59:45.7690885Z ##[group]Runner Image
+build-and-test	Set up job	2026-10-29T14:59:45.7691434Z Image: ubuntu-24.04
+build-and-test	Set up job	2026-10-29T14:59:45.7691957Z Version: 20261025.353.1
+build-and-test	Set up job	2026-10-29T14:59:45.7692952Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+build-and-test	Set up job	2026-10-29T14:59:45.7694570Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+build-and-test	Set up job	2026-10-29T14:59:45.7695444Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T14:59:45.7696936Z ##[group]GITHUB_TOKEN Permissions
+build-and-test	Set up job	2026-10-29T14:59:45.7699516Z Contents: read
+build-and-test	Set up job	2026-10-29T14:59:45.7700444Z Metadata: read
+build-and-test	Set up job	2026-10-29T14:59:45.7701287Z Packages: read
+build-and-test	Set up job	2026-10-29T14:59:45.7702344Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T14:59:45.7705506Z Secret source: Actions
+build-and-test	Set up job	2026-10-29T14:59:45.7706876Z Cache mode: write
+build-and-test	Set up job	2026-10-29T14:59:45.7708260Z Prepare workflow directory
+build-and-test	Set up job	2026-10-29T14:59:45.8554919Z Prepare all required actions
+build-and-test	Set up job	2026-10-29T14:59:45.8629479Z Getting action download info
+build-and-test	Set up job	2026-10-29T14:59:46.1076756Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-test	Set up job	2026-10-29T14:59:46.2248289Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+build-and-test	Set up job	2026-10-29T14:59:46.4093084Z Complete job name: build-and-test
+build-and-test	Checkout code	﻿2026-10-29T14:59:46.4884885Z ##[group]Run actions/checkout@v4
+build-and-test	Checkout code	2026-10-29T14:59:46.4885810Z with:
+build-and-test	Checkout code	2026-10-29T14:59:46.4886385Z   repository: vixeralylo/test_coursera
+build-and-test	Checkout code	2026-10-29T14:59:46.4890185Z   token: ***
+build-and-test	Checkout code	2026-10-29T14:59:46.4890726Z   ssh-strict: true
+build-and-test	Checkout code	2026-10-29T14:59:46.4891213Z   ssh-user: git
+build-and-test	Checkout code	2026-10-29T14:59:46.4891697Z   persist-credentials: true
+build-and-test	Checkout code	2026-10-29T14:59:46.4892236Z   clean: true
+build-and-test	Checkout code	2026-10-29T14:59:46.4892714Z   sparse-checkout-cone-mode: true
+build-and-test	Checkout code	2026-10-29T14:59:46.4893280Z   fetch-depth: 1
+build-and-test	Checkout code	2026-10-29T14:59:46.4893812Z   fetch-tags: false
+build-and-test	Checkout code	2026-10-29T14:59:46.4894291Z   show-progress: true
+build-and-test	Checkout code	2026-10-29T14:59:46.4894788Z   lfs: false
+build-and-test	Checkout code	2026-10-29T14:59:46.4895241Z   submodules: false
+build-and-test	Checkout code	2026-10-29T14:59:46.4895724Z   set-safe-directory: true
+build-and-test	Checkout code	2026-10-29T14:59:46.4896286Z   allow-unsafe-pr-checkout: false
+build-and-test	Checkout code	2026-10-29T14:59:46.4897140Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.0945278Z Syncing repository: vixeralylo/test_coursera
+build-and-test	Checkout code	2026-10-29T14:59:47.0948622Z ##[group]Getting Git version info
+build-and-test	Checkout code	2026-10-29T14:59:47.0949905Z Working directory is '/home/runner/work/test_coursera/test_coursera'
+build-and-test	Checkout code	2026-10-29T14:59:47.0951567Z [command]/usr/bin/git version
+build-and-test	Checkout code	2026-10-29T14:59:47.1007119Z git version 2.56.0
+build-and-test	Checkout code	2026-10-29T14:59:47.1032027Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.1049620Z Temporarily overriding HOME='/home/runner/work/_temp/3ab0278f-2957-4a9c-8316-996cd551e44e' before making global git config changes
+build-and-test	Checkout code	2026-10-29T14:59:47.1051175Z Adding repository directory to the temporary git global config as a safe directory
+build-and-test	Checkout code	2026-10-29T14:59:47.1055709Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/test_coursera/test_coursera
+build-and-test	Checkout code	2026-10-29T14:59:47.1104781Z Deleting the contents of '/home/runner/work/test_coursera/test_coursera'
+build-and-test	Checkout code	2026-10-29T14:59:47.1109589Z ##[group]Initializing the repository
+build-and-test	Checkout code	2026-10-29T14:59:47.1114742Z [command]/usr/bin/git init /home/runner/work/test_coursera/test_coursera
+build-and-test	Checkout code	2026-10-29T14:59:47.1191846Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-test	Checkout code	2026-10-29T14:59:47.1195299Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-test	Checkout code	2026-10-29T14:59:47.1199077Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-test	Checkout code	2026-10-29T14:59:47.1201987Z hint: call:
+build-and-test	Checkout code	2026-10-29T14:59:47.1203314Z hint:
+build-and-test	Checkout code	2026-10-29T14:59:47.1204679Z hint: 	git config --global init.defaultBranch <name>
+build-and-test	Checkout code	2026-10-29T14:59:47.1206265Z hint:
+build-and-test	Checkout code	2026-10-29T14:59:47.1207685Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-test	Checkout code	2026-10-29T14:59:47.1209944Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-test	Checkout code	2026-10-29T14:59:47.1211746Z hint:
+build-and-test	Checkout code	2026-10-29T14:59:47.1212793Z hint: 	git branch -m <name>
+build-and-test	Checkout code	2026-10-29T14:59:47.1213923Z hint:
+build-and-test	Checkout code	2026-10-29T14:59:47.1215395Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-test	Checkout code	2026-10-29T14:59:47.1218020Z Initialized empty Git repository in /home/runner/work/test_coursera/test_coursera/.git/
+build-and-test	Checkout code	2026-10-29T14:59:47.1222356Z [command]/usr/bin/git remote add origin https://github.com/vixeralylo/test_coursera
+build-and-test	Checkout code	2026-10-29T14:59:47.1253431Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.1254993Z ##[group]Disabling automatic garbage collection
+build-and-test	Checkout code	2026-10-29T14:59:47.1257454Z [command]/usr/bin/git config --local gc.auto 0
+build-and-test	Checkout code	2026-10-29T14:59:47.1286907Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.1288315Z ##[group]Setting up auth
+build-and-test	Checkout code	2026-10-29T14:59:47.1294578Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-test	Checkout code	2026-10-29T14:59:47.1326014Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-test	Checkout code	2026-10-29T14:59:47.1651884Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-test	Checkout code	2026-10-29T14:59:47.1689723Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-test	Checkout code	2026-10-29T14:59:47.1917025Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-test	Checkout code	2026-10-29T14:59:47.1953376Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-test	Checkout code	2026-10-29T14:59:47.2138294Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-test	Checkout code	2026-10-29T14:59:47.2174205Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.2175580Z ##[group]Fetching the repository
+build-and-test	Checkout code	2026-10-29T14:59:47.2186687Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e84f53524f0026a0fcc14af35d3b7dd3476c3c7b:refs/remotes/origin/main
+build-and-test	Checkout code	2026-10-29T14:59:47.4676817Z From https://github.com/vixeralylo/test_coursera
+build-and-test	Checkout code	2026-10-29T14:59:47.4679545Z  * [new ref]         e84f53524f0026a0fcc14af35d3b7dd3476c3c7b -> origin/main
+build-and-test	Checkout code	2026-10-29T14:59:47.4685057Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.4686546Z ##[group]Determining the checkout info
+build-and-test	Checkout code	2026-10-29T14:59:47.4688554Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.4689983Z [command]/usr/bin/git sparse-checkout disable
+build-and-test	Checkout code	2026-10-29T14:59:47.4734552Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-test	Checkout code	2026-10-29T14:59:47.4763005Z ##[group]Checking out the ref
+build-and-test	Checkout code	2026-10-29T14:59:47.4766881Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-test	Checkout code	2026-10-29T14:59:47.4821134Z Switched to a new branch 'main'
+build-and-test	Checkout code	2026-10-29T14:59:47.4825153Z branch 'main' set up to track 'origin/main'.
+build-and-test	Checkout code	2026-10-29T14:59:47.4830301Z ##[endgroup]
+build-and-test	Checkout code	2026-10-29T14:59:47.4867677Z [command]/usr/bin/git log -1 --format=%H
+build-and-test	Checkout code	2026-10-29T14:59:47.4891000Z e84f53524f0026a0fcc14af35d3b7dd3476c3c7b
+build-and-test	Set up Python	﻿2026-10-29T14:59:47.5262964Z ##[group]Run actions/setup-python@v5
+build-and-test	Set up Python	2026-10-29T14:59:47.5264201Z with:
+build-and-test	Set up Python	2026-10-29T14:59:47.5265086Z   python-version: 3.12
+build-and-test	Set up Python	2026-10-29T14:59:47.5266108Z   check-latest: false
+build-and-test	Set up Python	2026-10-29T14:59:47.5275333Z   token: ***
+build-and-test	Set up Python	2026-10-29T14:59:47.5276293Z   update-environment: true
+build-and-test	Set up Python	2026-10-29T14:59:47.5277610Z   allow-prereleases: false
+build-and-test	Set up Python	2026-10-29T14:59:47.5278669Z   freethreaded: false
+build-and-test	Set up Python	2026-10-29T14:59:47.5279719Z ##[endgroup]
+build-and-test	Set up Python	2026-10-29T14:59:47.6615488Z ##[group]Installed versions
+build-and-test	Set up Python	2026-10-29T14:59:47.6713919Z (node:2271) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-test	Set up Python	2026-10-29T14:59:47.6717556Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-test	Set up Python	2026-10-29T14:59:47.6720306Z Successfully set up CPython (3.12.15)
+build-and-test	Set up Python	2026-10-29T14:59:47.6723371Z ##[endgroup]
+build-and-test	Install dependencies	﻿2026-10-29T14:59:47.6884913Z ##[group]Run python -m pip install --upgrade pip
+build-and-test	Install dependencies	2026-10-29T14:59:47.6886528Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+build-and-test	Install dependencies	2026-10-29T14:59:47.6887817Z ^[[36;1mpip install flake8 nose2^[[0m
+build-and-test	Install dependencies	2026-10-29T14:59:47.6915952Z shell: /usr/bin/bash -e {0}
+build-and-test	Install dependencies	2026-10-29T14:59:47.6917054Z env:
+build-and-test	Install dependencies	2026-10-29T14:59:47.6918135Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Install dependencies	2026-10-29T14:59:47.6920055Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+build-and-test	Install dependencies	2026-10-29T14:59:47.6921845Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Install dependencies	2026-10-29T14:59:47.6923422Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Install dependencies	2026-10-29T14:59:47.6925038Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Install dependencies	2026-10-29T14:59:47.6926651Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+build-and-test	Install dependencies	2026-10-29T14:59:47.6928020Z ##[endgroup]
+build-and-test	Install dependencies	2026-10-29T14:59:49.1010981Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (26.2.2)
+build-and-test	Install dependencies	2026-10-29T14:59:49.8185116Z Collecting flake8
+build-and-test	Install dependencies	2026-10-29T14:59:49.9260388Z   Downloading flake8-7.5.0-py2.py3-none-any.whl.metadata (3.8 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:49.9552204Z Collecting nose2
+build-and-test	Install dependencies	2026-10-29T14:59:49.9742893Z   Downloading nose2-0.16.0-py3-none-any.whl.metadata (7.3 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.0014622Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8)
+build-and-test	Install dependencies	2026-10-29T14:59:50.0193607Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.0515844Z Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8)
+build-and-test	Install dependencies	2026-10-29T14:59:50.0698120Z   Downloading pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.0996167Z Collecting pyflakes<4.2.0,>=4.1.0 (from flake8)
+build-and-test	Install dependencies	2026-10-29T14:59:50.1176013Z   Downloading pyflakes-4.1.0-py2.py3-none-any.whl.metadata (3.7 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.1394777Z Downloading flake8-7.5.0-py2.py3-none-any.whl (57 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.1775374Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.1992306Z Downloading pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.2203826Z Downloading pyflakes-4.1.0-py2.py3-none-any.whl (66 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.2440934Z Downloading nose2-0.16.0-py3-none-any.whl (213 kB)
+build-and-test	Install dependencies	2026-10-29T14:59:50.2971764Z Installing collected packages: pyflakes, pycodestyle, nose2, mccabe, flake8
+build-and-test	Install dependencies	2026-10-29T14:59:50.5999630Z 
+build-and-test	Install dependencies	2026-10-29T14:59:50.6011174Z Successfully installed flake8-7.5.0 mccabe-0.7.0 nose2-0.16.0 pycodestyle-2.15.0 pyflakes-4.1.0
+build-and-test	Lint with flake8	﻿2026-10-29T14:59:50.6611005Z ##[group]Run # stop the build if there are Python syntax errors or undefined names
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6611591Z ^[[36;1m# stop the build if there are Python syntax errors or undefined names^[[0m
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6612078Z ^[[36;1mflake8 . --count --select=E9,F63,F7,F82 --show-source --statistics^[[0m
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6612548Z ^[[36;1m# exit-zero treats all remaining issues as warnings, not failures^[[0m
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6613088Z ^[[36;1mflake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics^[[0m
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6627863Z shell: /usr/bin/bash -e {0}
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6628145Z env:
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6628424Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6628859Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6629481Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6629897Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6630452Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6630902Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+build-and-test	Lint with flake8	2026-10-29T14:59:50.6631221Z ##[endgroup]
+build-and-test	Lint with flake8	2026-10-29T14:59:50.8991464Z 0
+build-and-test	Lint with flake8	2026-10-29T14:59:51.0194212Z 0
+build-and-test	Test with nose	﻿2026-10-29T14:59:51.0381979Z ##[group]Run python -m nose2 -v
+build-and-test	Test with nose	2026-10-29T14:59:51.0382309Z ^[[36;1mpython -m nose2 -v^[[0m
+build-and-test	Test with nose	2026-10-29T14:59:51.0395552Z shell: /usr/bin/bash -e {0}
+build-and-test	Test with nose	2026-10-29T14:59:51.0395820Z env:
+build-and-test	Test with nose	2026-10-29T14:59:51.0396099Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Test with nose	2026-10-29T14:59:51.0396535Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+build-and-test	Test with nose	2026-10-29T14:59:51.0396954Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Test with nose	2026-10-29T14:59:51.0397326Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Test with nose	2026-10-29T14:59:51.0397706Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Test with nose	2026-10-29T14:59:51.0398086Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+build-and-test	Test with nose	2026-10-29T14:59:51.0398425Z ##[endgroup]
+build-and-test	Test with nose	2026-10-29T14:59:51.3121062Z test_main_prints_hello_world (test_main.TestMain.test_main_prints_hello_world) ... ok
+build-and-test	Test with nose	2026-10-29T14:59:51.3121654Z 
+build-and-test	Test with nose	2026-10-29T14:59:51.3121819Z ----------------------------------------------------------------------
+build-and-test	Test with nose	2026-10-29T14:59:51.3122243Z Ran 1 test in 0.012s
+build-and-test	Test with nose	2026-10-29T14:59:51.3122380Z 
+build-and-test	Test with nose	2026-10-29T14:59:51.3122474Z OK
+build-and-test	Run app	﻿2026-10-29T14:59:51.3275457Z ##[group]Run python main.py
+build-and-test	Run app	2026-10-29T14:59:51.3275769Z ^[[36;1mpython main.py^[[0m
+build-and-test	Run app	2026-10-29T14:59:51.3288984Z shell: /usr/bin/bash -e {0}
+build-and-test	Run app	2026-10-29T14:59:51.3289450Z env:
+build-and-test	Run app	2026-10-29T14:59:51.3289732Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Run app	2026-10-29T14:59:51.3290175Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+build-and-test	Run app	2026-10-29T14:59:51.3290592Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Run app	2026-10-29T14:59:51.3290957Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Run app	2026-10-29T14:59:51.3291330Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+build-and-test	Run app	2026-10-29T14:59:51.3291718Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+build-and-test	Run app	2026-10-29T14:59:51.3292035Z ##[endgroup]
+build-and-test	Run app	2026-10-29T14:59:51.3423684Z Hello, World!
+build-and-test	Post Set up Python	﻿2026-10-29T14:59:51.3545167Z Post job cleanup.
+build-and-test	Post Set up Python	2026-10-29T14:59:51.4782462Z (node:2355) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-test	Post Set up Python	2026-10-29T14:59:51.4783270Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-test	Post Checkout code	﻿2026-10-29T14:59:51.4975315Z Post job cleanup.
+build-and-test	Post Checkout code	2026-10-29T14:59:51.5871865Z [command]/usr/bin/git version
+build-and-test	Post Checkout code	2026-10-29T14:59:51.5919359Z git version 2.56.0
+build-and-test	Post Checkout code	2026-10-29T14:59:51.5962802Z Temporarily overriding HOME='/home/runner/work/_temp/ffd832f6-469b-4faf-9b60-67eb6e643d55' before making global git config changes
+build-and-test	Post Checkout code	2026-10-29T14:59:51.5964210Z Adding repository directory to the temporary git global config as a safe directory
+build-and-test	Post Checkout code	2026-10-29T14:59:51.5965167Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/test_coursera/test_coursera
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6006058Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6042255Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6250440Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6274775Z http.https://github.com/.extraheader
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6286937Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6320856Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6555031Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-test	Post Checkout code	2026-10-29T14:59:51.6612583Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-test	Complete job	﻿2026-10-29T14:59:51.7052973Z Cleaning up orphan processes
+build-and-test	Complete job	2026-10-29T14:59:51.7471785Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
