@@ -2,35 +2,38 @@
 
 ## Project Name
 
-**ci-cd-final-project** — a minimal Python project created for learning Continuous Integration / Continuous Deployment (CI/CD) concepts as part of a Coursera course.
+**ci-cd-final-project** — a minimal Node.js project created for learning Continuous Integration / Continuous Deployment (CI/CD) concepts as part of a Coursera course.
 
 ## Description
 
-This project intentionally keeps the application logic as simple as possible (a single `print("Hello, World!")`) so that the focus stays entirely on building and understanding a CI/CD pipeline rather than on application complexity.
+This project intentionally keeps the application logic as simple as possible (a single `console.log("Hello, World!")`) so that the focus stays entirely on building and understanding a CI/CD pipeline rather than on application complexity.
 
 ## Project Structure
 
 ```
 .
-├── main.py                     # Entry point - prints "Hello, World!"
-├── test_main.py                 # Basic test for the application
+├── index.js                      # Entry point - prints "Hello, World!"
+├── index.test.js                  # Basic test for the application (Jest)
+├── package.json                   # Project metadata and dependencies
+├── .eslintrc.json                 # ESLint configuration
 ├── .github/
 │   └── workflows/
-│       └── workflow.yml         # GitHub Actions CI pipeline
+│       └── workflow.yml           # GitHub Actions CI pipeline
 ├── .tekton/
-│   ├── tasks.yml                 # Tekton Tasks (cleanup, flake8, nose-test)
-│   └── pipeline.yml              # Tekton Pipeline definition
+│   ├── tasks.yml                   # Tekton Tasks (cleanup, flake8, run-unit-tests-with-nose)
+│   └── pipeline.yml                # Tekton Pipeline definition
 └── README.md
 ```
 
 ## Requirements
 
-- Python 3.8+
+- Node.js 18+
 
 ## How to Run
 
 ```bash
-python main.py
+npm install
+node index.js
 ```
 
 Expected output:
@@ -42,19 +45,26 @@ Hello, World!
 ## How to Test
 
 ```bash
-pip install pytest
-pytest -v
+npm install
+npm test
+```
+
+## How to Lint
+
+```bash
+npm install
+npm run lint
 ```
 
 ## CI/CD
 
-This repository uses **GitHub Actions** (see [`.github/workflows/workflow.yml`](.github/workflows/workflow.yml)) to automatically:
+This repository uses **GitHub Actions** (see [`.github/workflows/workflow.yml`](.github/workflows/workflow.yml)) to automatically, inside a `node:18` container:
 
-1. Check out the code
-2. Set up Python
+1. Checkout the code
+2. Setup Node.js
 3. Install dependencies
-4. Lint with flake8
-5. Run unit tests with nose
+4. Linting (ESLint)
+5. Run unit tests (Jest)
 6. Run the application
 
 The pipeline is triggered on every `push` and `pull_request` to the `main`/`master` branch.
