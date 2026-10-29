@@ -1,216 +1,271 @@
-build-and-test	Set up job	﻿2026-10-29T15:28:31.4402471Z Current runner version: '2.338.0'
-build-and-test	Set up job	2026-10-29T15:28:31.4429100Z ##[group]Runner Image Provisioner
-build-and-test	Set up job	2026-10-29T15:28:31.4430069Z Hosted Compute Agent
-build-and-test	Set up job	2026-10-29T15:28:31.4430737Z Version: 20261021.618
-build-and-test	Set up job	2026-10-29T15:28:31.4431408Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
-build-and-test	Set up job	2026-10-29T15:28:31.4432155Z Build Date: 2026-10-21T00:45:21Z
-build-and-test	Set up job	2026-10-29T15:28:31.4432995Z Worker ID: {48ffd07c-5979-400d-a686-110105fe5a05}
-build-and-test	Set up job	2026-10-29T15:28:31.4433726Z Region: westus3
-build-and-test	Set up job	2026-10-29T15:28:31.4434276Z Cloud: Azure
-build-and-test	Set up job	2026-10-29T15:28:31.4434933Z ##[endgroup]
-build-and-test	Set up job	2026-10-29T15:28:31.4436463Z ##[group]Operating System
-build-and-test	Set up job	2026-10-29T15:28:31.4437302Z Ubuntu
-build-and-test	Set up job	2026-10-29T15:28:31.4438076Z 24.04.5
-build-and-test	Set up job	2026-10-29T15:28:31.4438621Z LTS
-build-and-test	Set up job	2026-10-29T15:28:31.4439231Z ##[endgroup]
-build-and-test	Set up job	2026-10-29T15:28:31.4439803Z ##[group]Runner Image
-build-and-test	Set up job	2026-10-29T15:28:31.4440532Z Image: ubuntu-24.04
-build-and-test	Set up job	2026-10-29T15:28:31.4441147Z Version: 20261025.353.1
-build-and-test	Set up job	2026-10-29T15:28:31.4442249Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
-build-and-test	Set up job	2026-10-29T15:28:31.4444064Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
-build-and-test	Set up job	2026-10-29T15:28:31.4445116Z ##[endgroup]
-build-and-test	Set up job	2026-10-29T15:28:31.4446359Z ##[group]GITHUB_TOKEN Permissions
-build-and-test	Set up job	2026-10-29T15:28:31.4448816Z Contents: read
-build-and-test	Set up job	2026-10-29T15:28:31.4449586Z Metadata: read
-build-and-test	Set up job	2026-10-29T15:28:31.4450232Z Packages: read
-build-and-test	Set up job	2026-10-29T15:28:31.4451284Z ##[endgroup]
-build-and-test	Set up job	2026-10-29T15:28:31.4453470Z Secret source: Actions
-build-and-test	Set up job	2026-10-29T15:28:31.4454531Z Cache mode: write
-build-and-test	Set up job	2026-10-29T15:28:31.4455249Z Prepare workflow directory
-build-and-test	Set up job	2026-10-29T15:28:31.4816176Z Prepare all required actions
-build-and-test	Set up job	2026-10-29T15:28:31.4865120Z Getting action download info
-build-and-test	Set up job	2026-10-29T15:28:31.8086633Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
-build-and-test	Set up job	2026-10-29T15:28:31.9465580Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
-build-and-test	Set up job	2026-10-29T15:28:32.1356041Z Complete job name: build-and-test
-build-and-test	Checkout code	﻿2026-10-29T15:28:32.2178627Z ##[group]Run actions/checkout@v4
-build-and-test	Checkout code	2026-10-29T15:28:32.2179610Z with:
-build-and-test	Checkout code	2026-10-29T15:28:32.2180123Z   repository: vixeralylo/ci-cd-final-project
-build-and-test	Checkout code	2026-10-29T15:28:32.2184241Z   token: ***
-build-and-test	Checkout code	2026-10-29T15:28:32.2184688Z   ssh-strict: true
-build-and-test	Checkout code	2026-10-29T15:28:32.2185135Z   ssh-user: git
-build-and-test	Checkout code	2026-10-29T15:28:32.2185587Z   persist-credentials: true
-build-and-test	Checkout code	2026-10-29T15:28:32.2186086Z   clean: true
-build-and-test	Checkout code	2026-10-29T15:28:32.2186540Z   sparse-checkout-cone-mode: true
-build-and-test	Checkout code	2026-10-29T15:28:32.2187072Z   fetch-depth: 1
-build-and-test	Checkout code	2026-10-29T15:28:32.2187520Z   fetch-tags: false
-build-and-test	Checkout code	2026-10-29T15:28:32.2188168Z   show-progress: true
-build-and-test	Checkout code	2026-10-29T15:28:32.2188640Z   lfs: false
-build-and-test	Checkout code	2026-10-29T15:28:32.2189057Z   submodules: false
-build-and-test	Checkout code	2026-10-29T15:28:32.2189508Z   set-safe-directory: true
-build-and-test	Checkout code	2026-10-29T15:28:32.2190014Z   allow-unsafe-pr-checkout: false
-build-and-test	Checkout code	2026-10-29T15:28:32.2190820Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:32.5491340Z Syncing repository: vixeralylo/ci-cd-final-project
-build-and-test	Checkout code	2026-10-29T15:28:32.5494900Z ##[group]Getting Git version info
-build-and-test	Checkout code	2026-10-29T15:28:32.5496788Z Working directory is '/home/runner/work/ci-cd-final-project/ci-cd-final-project'
-build-and-test	Checkout code	2026-10-29T15:28:32.5499662Z [command]/usr/bin/git version
-build-and-test	Checkout code	2026-10-29T15:28:32.5616825Z git version 2.56.0
-build-and-test	Checkout code	2026-10-29T15:28:32.5642831Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:32.5662990Z Temporarily overriding HOME='/home/runner/work/_temp/67ad9409-4739-4498-b293-d15099720410' before making global git config changes
-build-and-test	Checkout code	2026-10-29T15:28:32.5664642Z Adding repository directory to the temporary git global config as a safe directory
-build-and-test	Checkout code	2026-10-29T15:28:32.5684051Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-cd-final-project/ci-cd-final-project
-build-and-test	Checkout code	2026-10-29T15:28:32.5747072Z Deleting the contents of '/home/runner/work/ci-cd-final-project/ci-cd-final-project'
-build-and-test	Checkout code	2026-10-29T15:28:32.5755203Z ##[group]Initializing the repository
-build-and-test	Checkout code	2026-10-29T15:28:32.5756975Z [command]/usr/bin/git init /home/runner/work/ci-cd-final-project/ci-cd-final-project
-build-and-test	Checkout code	2026-10-29T15:28:32.5895220Z hint: Using 'master' as the name for the initial branch. This default branch name
-build-and-test	Checkout code	2026-10-29T15:28:32.5898221Z hint: will change to "main" in Git 3.0. To configure the initial branch name
-build-and-test	Checkout code	2026-10-29T15:28:32.5900400Z hint: to use in all of your new repositories, which will suppress this warning,
-build-and-test	Checkout code	2026-10-29T15:28:32.5901958Z hint: call:
-build-and-test	Checkout code	2026-10-29T15:28:32.5902828Z hint:
-build-and-test	Checkout code	2026-10-29T15:28:32.5904038Z hint: 	git config --global init.defaultBranch <name>
-build-and-test	Checkout code	2026-10-29T15:28:32.5905600Z hint:
-build-and-test	Checkout code	2026-10-29T15:28:32.5906841Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-build-and-test	Checkout code	2026-10-29T15:28:32.5909052Z hint: 'development'. The just-created branch can be renamed via this command:
-build-and-test	Checkout code	2026-10-29T15:28:32.5911201Z hint:
-build-and-test	Checkout code	2026-10-29T15:28:32.5912248Z hint: 	git branch -m <name>
-build-and-test	Checkout code	2026-10-29T15:28:32.5913393Z hint:
-build-and-test	Checkout code	2026-10-29T15:28:32.5914898Z hint: Disable this message with "git config set advice.defaultBranchName false"
-build-and-test	Checkout code	2026-10-29T15:28:32.5917634Z Initialized empty Git repository in /home/runner/work/ci-cd-final-project/ci-cd-final-project/.git/
-build-and-test	Checkout code	2026-10-29T15:28:32.5924353Z [command]/usr/bin/git remote add origin https://github.com/vixeralylo/ci-cd-final-project
-build-and-test	Checkout code	2026-10-29T15:28:32.5984812Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:32.5986371Z ##[group]Disabling automatic garbage collection
-build-and-test	Checkout code	2026-10-29T15:28:32.5989941Z [command]/usr/bin/git config --local gc.auto 0
-build-and-test	Checkout code	2026-10-29T15:28:32.6030070Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:32.6031990Z ##[group]Setting up auth
-build-and-test	Checkout code	2026-10-29T15:28:32.6039367Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-build-and-test	Checkout code	2026-10-29T15:28:32.6085973Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-build-and-test	Checkout code	2026-10-29T15:28:32.6543522Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-build-and-test	Checkout code	2026-10-29T15:28:32.6593113Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-build-and-test	Checkout code	2026-10-29T15:28:32.6847265Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-build-and-test	Checkout code	2026-10-29T15:28:32.6900269Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-build-and-test	Checkout code	2026-10-29T15:28:32.7169511Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-build-and-test	Checkout code	2026-10-29T15:28:32.7222622Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:32.7223662Z ##[group]Fetching the repository
-build-and-test	Checkout code	2026-10-29T15:28:32.7236890Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5aba41e3cf08f765526e32d87050ae6fe540f74a:refs/remotes/origin/main
-build-and-test	Checkout code	2026-10-29T15:28:33.3523900Z From https://github.com/vixeralylo/ci-cd-final-project
-build-and-test	Checkout code	2026-10-29T15:28:33.3526519Z  * [new ref]         5aba41e3cf08f765526e32d87050ae6fe540f74a -> origin/main
-build-and-test	Checkout code	2026-10-29T15:28:33.3532346Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:33.3535006Z ##[group]Determining the checkout info
-build-and-test	Checkout code	2026-10-29T15:28:33.3538084Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:33.3541781Z [command]/usr/bin/git sparse-checkout disable
-build-and-test	Checkout code	2026-10-29T15:28:33.3609969Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
-build-and-test	Checkout code	2026-10-29T15:28:33.3653301Z ##[group]Checking out the ref
-build-and-test	Checkout code	2026-10-29T15:28:33.3657808Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
-build-and-test	Checkout code	2026-10-29T15:28:33.3746988Z Switched to a new branch 'main'
-build-and-test	Checkout code	2026-10-29T15:28:33.3755054Z branch 'main' set up to track 'origin/main'.
-build-and-test	Checkout code	2026-10-29T15:28:33.3761751Z ##[endgroup]
-build-and-test	Checkout code	2026-10-29T15:28:33.3815927Z [command]/usr/bin/git log -1 --format=%H
-build-and-test	Checkout code	2026-10-29T15:28:33.3852628Z 5aba41e3cf08f765526e32d87050ae6fe540f74a
-build-and-test	Set up Python	﻿2026-10-29T15:28:33.4280964Z ##[group]Run actions/setup-python@v5
-build-and-test	Set up Python	2026-10-29T15:28:33.4282307Z with:
-build-and-test	Set up Python	2026-10-29T15:28:33.4283232Z   python-version: 3.12
-build-and-test	Set up Python	2026-10-29T15:28:33.4284280Z   check-latest: false
-build-and-test	Set up Python	2026-10-29T15:28:33.4295610Z   token: ***
-build-and-test	Set up Python	2026-10-29T15:28:33.4296878Z   update-environment: true
-build-and-test	Set up Python	2026-10-29T15:28:33.4298175Z   allow-prereleases: false
-build-and-test	Set up Python	2026-10-29T15:28:33.4299307Z   freethreaded: false
-build-and-test	Set up Python	2026-10-29T15:28:33.4300308Z ##[endgroup]
-build-and-test	Set up Python	2026-10-29T15:28:33.5806853Z ##[group]Installed versions
-build-and-test	Set up Python	2026-10-29T15:28:33.5941348Z (node:2316) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-build-and-test	Set up Python	2026-10-29T15:28:33.5945038Z (Use `node --trace-deprecation ...` to show where the warning was created)
-build-and-test	Set up Python	2026-10-29T15:28:33.5948098Z Successfully set up CPython (3.12.15)
-build-and-test	Set up Python	2026-10-29T15:28:33.5951418Z ##[endgroup]
-build-and-test	Install dependencies	﻿2026-10-29T15:28:33.6202460Z ##[group]Run python -m pip install --upgrade pip
-build-and-test	Install dependencies	2026-10-29T15:28:33.6204970Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
-build-and-test	Install dependencies	2026-10-29T15:28:33.6207147Z ^[[36;1mpip install flake8 nose2^[[0m
-build-and-test	Install dependencies	2026-10-29T15:28:33.6259809Z shell: /usr/bin/bash -e {0}
-build-and-test	Install dependencies	2026-10-29T15:28:33.6261025Z env:
-build-and-test	Install dependencies	2026-10-29T15:28:33.6262182Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Install dependencies	2026-10-29T15:28:33.6264118Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
-build-and-test	Install dependencies	2026-10-29T15:28:33.6266499Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Install dependencies	2026-10-29T15:28:33.6269450Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Install dependencies	2026-10-29T15:28:33.6272177Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Install dependencies	2026-10-29T15:28:33.6377330Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
-build-and-test	Install dependencies	2026-10-29T15:28:33.6380426Z ##[endgroup]
-build-and-test	Install dependencies	2026-10-29T15:28:34.5100333Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (26.2.2)
-build-and-test	Install dependencies	2026-10-29T15:28:35.1358539Z Collecting flake8
-build-and-test	Install dependencies	2026-10-29T15:28:35.2045543Z   Downloading flake8-7.5.0-py2.py3-none-any.whl.metadata (3.8 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.2254998Z Collecting nose2
-build-and-test	Install dependencies	2026-10-29T15:28:35.2362349Z   Downloading nose2-0.16.0-py3-none-any.whl.metadata (7.3 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.2568624Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8)
-build-and-test	Install dependencies	2026-10-29T15:28:35.2674198Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.2872671Z Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8)
-build-and-test	Install dependencies	2026-10-29T15:28:35.2976627Z   Downloading pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.3186128Z Collecting pyflakes<4.2.0,>=4.1.0 (from flake8)
-build-and-test	Install dependencies	2026-10-29T15:28:35.3288593Z   Downloading pyflakes-4.1.0-py2.py3-none-any.whl.metadata (3.7 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.3435668Z Downloading flake8-7.5.0-py2.py3-none-any.whl (57 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.3675361Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.3795388Z Downloading pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.3918094Z Downloading pyflakes-4.1.0-py2.py3-none-any.whl (66 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.4065280Z Downloading nose2-0.16.0-py3-none-any.whl (213 kB)
-build-and-test	Install dependencies	2026-10-29T15:28:35.4536033Z Installing collected packages: pyflakes, pycodestyle, nose2, mccabe, flake8
-build-and-test	Install dependencies	2026-10-29T15:28:35.8046493Z 
-build-and-test	Install dependencies	2026-10-29T15:28:35.8059818Z Successfully installed flake8-7.5.0 mccabe-0.7.0 nose2-0.16.0 pycodestyle-2.15.0 pyflakes-4.1.0
-build-and-test	Lint with flake8	﻿2026-10-29T15:28:35.8586650Z ##[group]Run # stop the build if there are Python syntax errors or undefined names
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8587294Z ^[[36;1m# stop the build if there are Python syntax errors or undefined names^[[0m
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8587815Z ^[[36;1mflake8 . --count --select=E9,F63,F7,F82 --show-source --statistics^[[0m
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8588772Z ^[[36;1m# exit-zero treats all remaining issues as warnings, not failures^[[0m
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8589349Z ^[[36;1mflake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics^[[0m
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8610864Z shell: /usr/bin/bash -e {0}
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8611125Z env:
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8611393Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8611851Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8612283Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8612903Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8613294Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8613745Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
-build-and-test	Lint with flake8	2026-10-29T15:28:35.8614073Z ##[endgroup]
-build-and-test	Lint with flake8	2026-10-29T15:28:36.0343491Z 0
-build-and-test	Lint with flake8	2026-10-29T15:28:36.1740276Z 0
-build-and-test	Test with nose	﻿2026-10-29T15:28:36.1942405Z ##[group]Run python -m nose2 -v
-build-and-test	Test with nose	2026-10-29T15:28:36.1942747Z ^[[36;1mpython -m nose2 -v^[[0m
-build-and-test	Test with nose	2026-10-29T15:28:36.1963351Z shell: /usr/bin/bash -e {0}
-build-and-test	Test with nose	2026-10-29T15:28:36.1963614Z env:
-build-and-test	Test with nose	2026-10-29T15:28:36.1963891Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Test with nose	2026-10-29T15:28:36.1964343Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
-build-and-test	Test with nose	2026-10-29T15:28:36.1964784Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Test with nose	2026-10-29T15:28:36.1965164Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Test with nose	2026-10-29T15:28:36.1965553Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Test with nose	2026-10-29T15:28:36.1965966Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
-build-and-test	Test with nose	2026-10-29T15:28:36.1966301Z ##[endgroup]
-build-and-test	Test with nose	2026-10-29T15:28:36.3729452Z test_main_prints_hello_world (test_main.TestMain.test_main_prints_hello_world) ... ok
-build-and-test	Test with nose	2026-10-29T15:28:36.3729907Z 
-build-and-test	Test with nose	2026-10-29T15:28:36.3730080Z ----------------------------------------------------------------------
-build-and-test	Test with nose	2026-10-29T15:28:36.3730505Z Ran 1 test in 0.014s
-build-and-test	Test with nose	2026-10-29T15:28:36.3730653Z 
-build-and-test	Test with nose	2026-10-29T15:28:36.3730735Z OK
-build-and-test	Run app	﻿2026-10-29T15:28:36.3891802Z ##[group]Run python main.py
-build-and-test	Run app	2026-10-29T15:28:36.3892131Z ^[[36;1mpython main.py^[[0m
-build-and-test	Run app	2026-10-29T15:28:36.3913129Z shell: /usr/bin/bash -e {0}
-build-and-test	Run app	2026-10-29T15:28:36.3913384Z env:
-build-and-test	Run app	2026-10-29T15:28:36.3913655Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Run app	2026-10-29T15:28:36.3914108Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
-build-and-test	Run app	2026-10-29T15:28:36.3914544Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Run app	2026-10-29T15:28:36.3914926Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Run app	2026-10-29T15:28:36.3915331Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
-build-and-test	Run app	2026-10-29T15:28:36.3915716Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
-build-and-test	Run app	2026-10-29T15:28:36.3916300Z ##[endgroup]
-build-and-test	Run app	2026-10-29T15:28:36.4061903Z Hello, World!
-build-and-test	Post Set up Python	﻿2026-10-29T15:28:36.4198609Z Post job cleanup.
-build-and-test	Post Set up Python	2026-10-29T15:28:36.5554913Z (node:2391) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-build-and-test	Post Set up Python	2026-10-29T15:28:36.5555861Z (Use `node --trace-deprecation ...` to show where the warning was created)
-build-and-test	Post Checkout code	﻿2026-10-29T15:28:36.5764196Z Post job cleanup.
-build-and-test	Post Checkout code	2026-10-29T15:28:36.6745593Z [command]/usr/bin/git version
-build-and-test	Post Checkout code	2026-10-29T15:28:36.6829420Z git version 2.56.0
-build-and-test	Post Checkout code	2026-10-29T15:28:36.6874631Z Temporarily overriding HOME='/home/runner/work/_temp/60767824-2594-4c53-a920-eff48580c5c4' before making global git config changes
-build-and-test	Post Checkout code	2026-10-29T15:28:36.6876122Z Adding repository directory to the temporary git global config as a safe directory
-build-and-test	Post Checkout code	2026-10-29T15:28:36.6882263Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-cd-final-project/ci-cd-final-project
-build-and-test	Post Checkout code	2026-10-29T15:28:36.6959025Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-build-and-test	Post Checkout code	2026-10-29T15:28:36.7005853Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-build-and-test	Post Checkout code	2026-10-29T15:28:36.7305073Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-build-and-test	Post Checkout code	2026-10-29T15:28:36.7347726Z http.https://github.com/.extraheader
-build-and-test	Post Checkout code	2026-10-29T15:28:36.7368525Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
-build-and-test	Post Checkout code	2026-10-29T15:28:36.7456178Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-build-and-test	Post Checkout code	2026-10-29T15:28:36.7846496Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-build-and-test	Post Checkout code	2026-10-29T15:28:36.7915366Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-build-and-test	Complete job	﻿2026-10-29T15:28:36.8405802Z Cleaning up orphan processes
-build-and-test	Complete job	2026-10-29T15:28:36.8711709Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-test	Set up job	﻿2026-10-29T15:35:32.1004273Z Current runner version: '2.338.0'
+build-and-test	Set up job	2026-10-29T15:35:32.1029302Z ##[group]Runner Image Provisioner
+build-and-test	Set up job	2026-10-29T15:35:32.1030160Z Hosted Compute Agent
+build-and-test	Set up job	2026-10-29T15:35:32.1030665Z Version: 20261021.618
+build-and-test	Set up job	2026-10-29T15:35:32.1031213Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+build-and-test	Set up job	2026-10-29T15:35:32.1031873Z Build Date: 2026-10-21T00:45:21Z
+build-and-test	Set up job	2026-10-29T15:35:32.1032422Z Worker ID: {b0458c71-e04e-40ad-adb1-6cc4fef81bfc}
+build-and-test	Set up job	2026-10-29T15:35:32.1033098Z Region: eastus
+build-and-test	Set up job	2026-10-29T15:35:32.1033565Z Cloud: Azure
+build-and-test	Set up job	2026-10-29T15:35:32.1034040Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T15:35:32.1035391Z ##[group]Operating System
+build-and-test	Set up job	2026-10-29T15:35:32.1035933Z Ubuntu
+build-and-test	Set up job	2026-10-29T15:35:32.1036472Z 24.04.5
+build-and-test	Set up job	2026-10-29T15:35:32.1036968Z LTS
+build-and-test	Set up job	2026-10-29T15:35:32.1037467Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T15:35:32.1037994Z ##[group]Runner Image
+build-and-test	Set up job	2026-10-29T15:35:32.1038479Z Image: ubuntu-24.04
+build-and-test	Set up job	2026-10-29T15:35:32.1039046Z Version: 20261025.353.1
+build-and-test	Set up job	2026-10-29T15:35:32.1039937Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+build-and-test	Set up job	2026-10-29T15:35:32.1041470Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+build-and-test	Set up job	2026-10-29T15:35:32.1042263Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T15:35:32.1043360Z ##[group]GITHUB_TOKEN Permissions
+build-and-test	Set up job	2026-10-29T15:35:32.1045926Z Contents: read
+build-and-test	Set up job	2026-10-29T15:35:32.1046483Z Metadata: read
+build-and-test	Set up job	2026-10-29T15:35:32.1046987Z Packages: read
+build-and-test	Set up job	2026-10-29T15:35:32.1047526Z ##[endgroup]
+build-and-test	Set up job	2026-10-29T15:35:32.1049400Z Secret source: Actions
+build-and-test	Set up job	2026-10-29T15:35:32.1050265Z Cache mode: write
+build-and-test	Set up job	2026-10-29T15:35:32.1051029Z Prepare workflow directory
+build-and-test	Set up job	2026-10-29T15:35:32.1389867Z Prepare all required actions
+build-and-test	Set up job	2026-10-29T15:35:32.1431116Z Getting action download info
+build-and-test	Set up job	2026-10-29T15:35:32.3498956Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-test	Set up job	2026-10-29T15:35:32.4389530Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build-and-test	Set up job	2026-10-29T15:35:32.6537110Z Complete job name: build-and-test
+build-and-test	Initialize containers	﻿2026-10-29T15:35:32.6966863Z ##[group]Checking docker version
+build-and-test	Initialize containers	2026-10-29T15:35:32.6977361Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+build-and-test	Initialize containers	2026-10-29T15:35:32.8411046Z '1.48'
+build-and-test	Initialize containers	2026-10-29T15:35:32.8420831Z Docker daemon API version: '1.48'
+build-and-test	Initialize containers	2026-10-29T15:35:32.8421550Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+build-and-test	Initialize containers	2026-10-29T15:35:32.8583710Z '1.48'
+build-and-test	Initialize containers	2026-10-29T15:35:32.8596701Z Docker client API version: '1.48'
+build-and-test	Initialize containers	2026-10-29T15:35:32.8601903Z ##[endgroup]
+build-and-test	Initialize containers	2026-10-29T15:35:32.8604818Z ##[group]Clean up resources from previous jobs
+build-and-test	Initialize containers	2026-10-29T15:35:32.8609184Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=3e06b6"
+build-and-test	Initialize containers	2026-10-29T15:35:33.0421832Z ##[command]/usr/bin/docker network prune --force --filter "label=3e06b6"
+build-and-test	Initialize containers	2026-10-29T15:35:33.0567620Z ##[endgroup]
+build-and-test	Initialize containers	2026-10-29T15:35:33.0568168Z ##[group]Create local container network
+build-and-test	Initialize containers	2026-10-29T15:35:33.0576800Z ##[command]/usr/bin/docker network create --label 3e06b6 github_network_96e408ab85b1444e9fd1dbe1c762b2a0
+build-and-test	Initialize containers	2026-10-29T15:35:33.1072685Z e69249eab704ba26034c1801fdcf7b24d17c2044d09dbe9107e394b32df85656
+build-and-test	Initialize containers	2026-10-29T15:35:33.1102649Z ##[endgroup]
+build-and-test	Initialize containers	2026-10-29T15:35:33.1132837Z ##[group]Starting job container
+build-and-test	Initialize containers	2026-10-29T15:35:33.1158105Z ##[command]/usr/bin/docker pull node:18
+build-and-test	Initialize containers	2026-10-29T15:35:33.5512343Z 18: Pulling from library/node
+build-and-test	Initialize containers	2026-10-29T15:35:33.6225959Z 3e6b9d1a9511: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6227143Z 37927ed901b1: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6228037Z 79b2f47ad444: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6228937Z e23f099911d6: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6229884Z cda7f44f2bdd: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6230606Z c6b30c3f1696: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6231366Z 3697be50c98b: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6231986Z 461077a72fb7: Pulling fs layer
+build-and-test	Initialize containers	2026-10-29T15:35:33.6232571Z e23f099911d6: Waiting
+build-and-test	Initialize containers	2026-10-29T15:35:33.6233126Z cda7f44f2bdd: Waiting
+build-and-test	Initialize containers	2026-10-29T15:35:33.6233664Z 461077a72fb7: Waiting
+build-and-test	Initialize containers	2026-10-29T15:35:33.6234464Z 3697be50c98b: Waiting
+build-and-test	Initialize containers	2026-10-29T15:35:33.6235638Z c6b30c3f1696: Waiting
+build-and-test	Initialize containers	2026-10-29T15:35:33.7464574Z 37927ed901b1: Verifying Checksum
+build-and-test	Initialize containers	2026-10-29T15:35:33.7466314Z 37927ed901b1: Download complete
+build-and-test	Initialize containers	2026-10-29T15:35:33.8146084Z 3e6b9d1a9511: Verifying Checksum
+build-and-test	Initialize containers	2026-10-29T15:35:33.8147262Z 3e6b9d1a9511: Download complete
+build-and-test	Initialize containers	2026-10-29T15:35:33.8551325Z cda7f44f2bdd: Verifying Checksum
+build-and-test	Initialize containers	2026-10-29T15:35:33.8559145Z cda7f44f2bdd: Download complete
+build-and-test	Initialize containers	2026-10-29T15:35:33.8561370Z 79b2f47ad444: Verifying Checksum
+build-and-test	Initialize containers	2026-10-29T15:35:33.8562541Z 79b2f47ad444: Download complete
+build-and-test	Initialize containers	2026-10-29T15:35:33.8981113Z 3697be50c98b: Verifying Checksum
+build-and-test	Initialize containers	2026-10-29T15:35:33.8983926Z 3697be50c98b: Download complete
+build-and-test	Initialize containers	2026-10-29T15:35:33.9336614Z 461077a72fb7: Download complete
+build-and-test	Initialize containers	2026-10-29T15:35:34.0404924Z c6b30c3f1696: Verifying Checksum
+build-and-test	Initialize containers	2026-10-29T15:35:34.0406840Z c6b30c3f1696: Download complete
+build-and-test	Initialize containers	2026-10-29T15:35:34.5422466Z e23f099911d6: Verifying Checksum
+build-and-test	Initialize containers	2026-10-29T15:35:35.4043995Z 3e6b9d1a9511: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:40.0235681Z 37927ed901b1: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:42.8304463Z 79b2f47ad444: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:49.9772462Z e23f099911d6: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:49.9941431Z cda7f44f2bdd: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:52.2422390Z c6b30c3f1696: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:52.3017419Z 3697be50c98b: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:52.3099745Z 461077a72fb7: Pull complete
+build-and-test	Initialize containers	2026-10-29T15:35:52.3131743Z Digest: sha256:c6ae79e38498325db67193d391e6ec1d224d96c693a8a4d943498556716d3783
+build-and-test	Initialize containers	2026-10-29T15:35:52.3143519Z Status: Downloaded newer image for node:18
+build-and-test	Initialize containers	2026-10-29T15:35:52.3150293Z docker.io/library/node:18
+build-and-test	Initialize containers	2026-10-29T15:35:52.3219677Z ##[command]/usr/bin/docker create --name 5a545c27aa574fe19b84aa25bfb4c2d4_node18_02feb7 --label 3e06b6 --workdir /__w/ci-cd-final-project/ci-cd-final-project --network github_network_96e408ab85b1444e9fd1dbe1c762b2a0  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/actions-runner/cached/2.338.0/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" node:18 "-f" "/dev/null"
+build-and-test	Initialize containers	2026-10-29T15:35:52.3708930Z a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c
+build-and-test	Initialize containers	2026-10-29T15:35:52.3731464Z ##[command]/usr/bin/docker start a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c
+build-and-test	Initialize containers	2026-10-29T15:35:52.5649787Z a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c
+build-and-test	Initialize containers	2026-10-29T15:35:52.5668975Z ##[command]/usr/bin/docker ps --all --filter id=a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+build-and-test	Initialize containers	2026-10-29T15:35:52.5792600Z a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c Up Less than a second
+build-and-test	Initialize containers	2026-10-29T15:35:52.5812924Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c
+build-and-test	Initialize containers	2026-10-29T15:35:52.5936935Z HOME=/github/home
+build-and-test	Initialize containers	2026-10-29T15:35:52.5937566Z GITHUB_ACTIONS=true
+build-and-test	Initialize containers	2026-10-29T15:35:52.5938171Z CI=true
+build-and-test	Initialize containers	2026-10-29T15:35:52.5938683Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+build-and-test	Initialize containers	2026-10-29T15:35:52.5939129Z NODE_VERSION=18.20.8
+build-and-test	Initialize containers	2026-10-29T15:35:52.5939314Z YARN_VERSION=1.22.22
+build-and-test	Initialize containers	2026-10-29T15:35:52.5958841Z ##[endgroup]
+build-and-test	Initialize containers	2026-10-29T15:35:52.5966705Z ##[group]Waiting for all services to be ready
+build-and-test	Initialize containers	2026-10-29T15:35:52.5968154Z ##[endgroup]
+build-and-test	Checkout	﻿2026-10-29T15:35:52.6206288Z ##[group]Run actions/checkout@v4
+build-and-test	Checkout	2026-10-29T15:35:52.6206745Z with:
+build-and-test	Checkout	2026-10-29T15:35:52.6206973Z   repository: vixeralylo/ci-cd-final-project
+build-and-test	Checkout	2026-10-29T15:35:52.6208928Z   token: ***
+build-and-test	Checkout	2026-10-29T15:35:52.6209111Z   ssh-strict: true
+build-and-test	Checkout	2026-10-29T15:35:52.6209298Z   ssh-user: git
+build-and-test	Checkout	2026-10-29T15:35:52.6209474Z   persist-credentials: true
+build-and-test	Checkout	2026-10-29T15:35:52.6209668Z   clean: true
+build-and-test	Checkout	2026-10-29T15:35:52.6209848Z   sparse-checkout-cone-mode: true
+build-and-test	Checkout	2026-10-29T15:35:52.6210273Z   fetch-depth: 1
+build-and-test	Checkout	2026-10-29T15:35:52.6210443Z   fetch-tags: false
+build-and-test	Checkout	2026-10-29T15:35:52.6210666Z   show-progress: true
+build-and-test	Checkout	2026-10-29T15:35:52.6210838Z   lfs: false
+build-and-test	Checkout	2026-10-29T15:35:52.6210991Z   submodules: false
+build-and-test	Checkout	2026-10-29T15:35:52.6211158Z   set-safe-directory: true
+build-and-test	Checkout	2026-10-29T15:35:52.6211358Z   allow-unsafe-pr-checkout: false
+build-and-test	Checkout	2026-10-29T15:35:52.6211719Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:52.6261471Z ##[command]/usr/bin/docker exec  a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c sh -c "cat /etc/*release | grep ^ID"
+build-and-test	Checkout	2026-10-29T15:35:53.0992170Z Syncing repository: vixeralylo/ci-cd-final-project
+build-and-test	Checkout	2026-10-29T15:35:53.0993260Z ##[group]Getting Git version info
+build-and-test	Checkout	2026-10-29T15:35:53.0993598Z Working directory is '/__w/ci-cd-final-project/ci-cd-final-project'
+build-and-test	Checkout	2026-10-29T15:35:53.0994241Z [command]/usr/bin/git version
+build-and-test	Checkout	2026-10-29T15:35:53.0994461Z git version 2.39.5
+build-and-test	Checkout	2026-10-29T15:35:53.0995168Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:53.0998181Z Temporarily overriding HOME='/__w/_temp/35d081f2-8a95-4c03-83de-df47f6656226' before making global git config changes
+build-and-test	Checkout	2026-10-29T15:35:53.0998749Z Adding repository directory to the temporary git global config as a safe directory
+build-and-test	Checkout	2026-10-29T15:35:53.0999256Z [command]/usr/bin/git config --global --add safe.directory /__w/ci-cd-final-project/ci-cd-final-project
+build-and-test	Checkout	2026-10-29T15:35:53.2229652Z Deleting the contents of '/__w/ci-cd-final-project/ci-cd-final-project'
+build-and-test	Checkout	2026-10-29T15:35:53.2235424Z ##[group]Initializing the repository
+build-and-test	Checkout	2026-10-29T15:35:53.2238254Z [command]/usr/bin/git init /__w/ci-cd-final-project/ci-cd-final-project
+build-and-test	Checkout	2026-10-29T15:35:53.2274503Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-test	Checkout	2026-10-29T15:35:53.2275535Z hint: is subject to change. To configure the initial branch name to use in all
+build-and-test	Checkout	2026-10-29T15:35:53.2276185Z hint: of your new repositories, which will suppress this warning, call:
+build-and-test	Checkout	2026-10-29T15:35:53.2276597Z hint: 
+build-and-test	Checkout	2026-10-29T15:35:53.2277039Z hint: 	git config --global init.defaultBranch <name>
+build-and-test	Checkout	2026-10-29T15:35:53.2277444Z hint: 
+build-and-test	Checkout	2026-10-29T15:35:53.2277808Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-test	Checkout	2026-10-29T15:35:53.2278403Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-test	Checkout	2026-10-29T15:35:53.2278749Z hint: 
+build-and-test	Checkout	2026-10-29T15:35:53.2278923Z hint: 	git branch -m <name>
+build-and-test	Checkout	2026-10-29T15:35:53.2283769Z Initialized empty Git repository in /__w/ci-cd-final-project/ci-cd-final-project/.git/
+build-and-test	Checkout	2026-10-29T15:35:53.2295261Z [command]/usr/bin/git remote add origin https://github.com/vixeralylo/ci-cd-final-project
+build-and-test	Checkout	2026-10-29T15:35:53.2327601Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:53.2328111Z ##[group]Disabling automatic garbage collection
+build-and-test	Checkout	2026-10-29T15:35:53.2331098Z [command]/usr/bin/git config --local gc.auto 0
+build-and-test	Checkout	2026-10-29T15:35:53.2360059Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:53.2360546Z ##[group]Setting up auth
+build-and-test	Checkout	2026-10-29T15:35:53.2365919Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-test	Checkout	2026-10-29T15:35:53.2402657Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-test	Checkout	2026-10-29T15:35:53.2625803Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-test	Checkout	2026-10-29T15:35:53.2656822Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-test	Checkout	2026-10-29T15:35:53.2871092Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-test	Checkout	2026-10-29T15:35:53.2906708Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-test	Checkout	2026-10-29T15:35:53.3136207Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-test	Checkout	2026-10-29T15:35:53.3182568Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:53.3183084Z ##[group]Fetching the repository
+build-and-test	Checkout	2026-10-29T15:35:53.3193993Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d4534b6821205aacb03c827613746bfd3fbcafb3:refs/remotes/origin/main
+build-and-test	Checkout	2026-10-29T15:35:53.5357382Z From https://github.com/vixeralylo/ci-cd-final-project
+build-and-test	Checkout	2026-10-29T15:35:53.5358042Z  * [new ref]         d4534b6821205aacb03c827613746bfd3fbcafb3 -> origin/main
+build-and-test	Checkout	2026-10-29T15:35:53.5374996Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:53.5375717Z ##[group]Determining the checkout info
+build-and-test	Checkout	2026-10-29T15:35:53.5378406Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:53.5385052Z [command]/usr/bin/git sparse-checkout disable
+build-and-test	Checkout	2026-10-29T15:35:53.5437236Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-test	Checkout	2026-10-29T15:35:53.5472838Z ##[group]Checking out the ref
+build-and-test	Checkout	2026-10-29T15:35:53.5475724Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-test	Checkout	2026-10-29T15:35:53.5538580Z Switched to a new branch 'main'
+build-and-test	Checkout	2026-10-29T15:35:53.5544815Z branch 'main' set up to track 'origin/main'.
+build-and-test	Checkout	2026-10-29T15:35:53.5546057Z ##[endgroup]
+build-and-test	Checkout	2026-10-29T15:35:53.5592071Z [command]/usr/bin/git log -1 --format=%H
+build-and-test	Checkout	2026-10-29T15:35:53.5625716Z d4534b6821205aacb03c827613746bfd3fbcafb3
+build-and-test	Setup Node.js	﻿2026-10-29T15:35:53.5896465Z ##[group]Run actions/setup-node@v4
+build-and-test	Setup Node.js	2026-10-29T15:35:53.5896701Z with:
+build-and-test	Setup Node.js	2026-10-29T15:35:53.5896860Z   node-version: 18
+build-and-test	Setup Node.js	2026-10-29T15:35:53.5897035Z   always-auth: false
+build-and-test	Setup Node.js	2026-10-29T15:35:53.5897204Z   check-latest: false
+build-and-test	Setup Node.js	2026-10-29T15:35:53.5899041Z   token: ***
+build-and-test	Setup Node.js	2026-10-29T15:35:53.5899275Z ##[endgroup]
+build-and-test	Setup Node.js	2026-10-29T15:35:53.5904969Z ##[command]/usr/bin/docker exec  a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c sh -c "cat /etc/*release | grep ^ID"
+build-and-test	Setup Node.js	2026-10-29T15:35:53.8482298Z Attempting to download 18...
+build-and-test	Setup Node.js	2026-10-29T15:35:53.8636732Z (node:143) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-test	Setup Node.js	2026-10-29T15:35:53.8637338Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-test	Setup Node.js	2026-10-29T15:35:54.4793145Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+build-and-test	Setup Node.js	2026-10-29T15:35:54.7379884Z Extracting ...
+build-and-test	Setup Node.js	2026-10-29T15:35:54.7481085Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /__w/_temp/51241b62-cddc-4ccf-856a-22cb9c1c9cfc -f /__w/_temp/ce43f098-90e0-4ef7-b6bf-afc125bed757
+build-and-test	Setup Node.js	2026-10-29T15:35:55.6024417Z Adding to the cache ...
+build-and-test	Setup Node.js	2026-10-29T15:35:57.3162127Z ##[group]Environment details
+build-and-test	Setup Node.js	2026-10-29T15:35:57.5185005Z node: v18.20.8
+build-and-test	Setup Node.js	2026-10-29T15:35:57.5185576Z npm: 10.8.2
+build-and-test	Setup Node.js	2026-10-29T15:35:57.5186027Z yarn: 1.22.22
+build-and-test	Setup Node.js	2026-10-29T15:35:57.5186676Z ##[endgroup]
+build-and-test	Install dependencies	﻿2026-10-29T15:35:57.5387105Z ##[group]Run npm install
+build-and-test	Install dependencies	2026-10-29T15:35:57.5387368Z ^[[36;1mnpm install^[[0m
+build-and-test	Install dependencies	2026-10-29T15:35:57.5389974Z shell: sh -e {0}
+build-and-test	Install dependencies	2026-10-29T15:35:57.5390167Z ##[endgroup]
+build-and-test	Install dependencies	2026-10-29T15:35:58.7597480Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+build-and-test	Install dependencies	2026-10-29T15:35:59.1163046Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build-and-test	Install dependencies	2026-10-29T15:35:59.2062758Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build-and-test	Install dependencies	2026-10-29T15:35:59.4793309Z npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+build-and-test	Install dependencies	2026-10-29T15:35:59.5057873Z npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+build-and-test	Install dependencies	2026-10-29T15:36:00.2842292Z npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+build-and-test	Install dependencies	2026-10-29T15:36:00.4546183Z 
+build-and-test	Install dependencies	2026-10-29T15:36:00.4547374Z added 336 packages, and audited 337 packages in 3s
+build-and-test	Install dependencies	2026-10-29T15:36:00.4547748Z 
+build-and-test	Install dependencies	2026-10-29T15:36:00.4547955Z 51 packages are looking for funding
+build-and-test	Install dependencies	2026-10-29T15:36:00.4548318Z   run `npm fund` for details
+build-and-test	Install dependencies	2026-10-29T15:36:00.4659299Z 
+build-and-test	Install dependencies	2026-10-29T15:36:00.4659949Z 6 low severity vulnerabilities
+build-and-test	Install dependencies	2026-10-29T15:36:00.4660221Z 
+build-and-test	Install dependencies	2026-10-29T15:36:00.4660597Z To address issues that do not require attention, run:
+build-and-test	Install dependencies	2026-10-29T15:36:00.4660947Z   npm audit fix
+build-and-test	Install dependencies	2026-10-29T15:36:00.4661076Z 
+build-and-test	Install dependencies	2026-10-29T15:36:00.4661322Z To address all issues (including breaking changes), run:
+build-and-test	Install dependencies	2026-10-29T15:36:00.4661692Z   npm audit fix --force
+build-and-test	Install dependencies	2026-10-29T15:36:00.4661850Z 
+build-and-test	Install dependencies	2026-10-29T15:36:00.4662007Z Run `npm audit` for details.
+build-and-test	Linting	﻿2026-10-29T15:36:00.5410099Z ##[group]Run npx eslint .
+build-and-test	Linting	2026-10-29T15:36:00.5410352Z ^[[36;1mnpx eslint .^[[0m
+build-and-test	Linting	2026-10-29T15:36:00.5410643Z shell: sh -e {0}
+build-and-test	Linting	2026-10-29T15:36:00.5410811Z ##[endgroup]
+build-and-test	Run unit tests	﻿2026-10-29T15:36:01.1513840Z ##[group]Run npx jest
+build-and-test	Run unit tests	2026-10-29T15:36:01.1514478Z ^[[36;1mnpx jest^[[0m
+build-and-test	Run unit tests	2026-10-29T15:36:01.1514851Z shell: sh -e {0}
+build-and-test	Run unit tests	2026-10-29T15:36:01.1515025Z ##[endgroup]
+build-and-test	Run unit tests	2026-10-29T15:36:02.0679246Z PASS ./index.test.js
+build-and-test	Run unit tests	2026-10-29T15:36:02.0681741Z   ✓ prints Hello, World! when run (28 ms)
+build-and-test	Run unit tests	2026-10-29T15:36:02.0681934Z 
+build-and-test	Run unit tests	2026-10-29T15:36:02.0698991Z Test Suites: 1 passed, 1 total
+build-and-test	Run unit tests	2026-10-29T15:36:02.0699276Z Tests:       1 passed, 1 total
+build-and-test	Run unit tests	2026-10-29T15:36:02.0699518Z Snapshots:   0 total
+build-and-test	Run unit tests	2026-10-29T15:36:02.0699762Z Time:        0.266 s
+build-and-test	Run unit tests	2026-10-29T15:36:02.0699945Z Ran all test suites.
+build-and-test	Run app	﻿2026-10-29T15:36:02.0976725Z ##[group]Run node index.js
+build-and-test	Run app	2026-10-29T15:36:02.0976970Z ^[[36;1mnode index.js^[[0m
+build-and-test	Run app	2026-10-29T15:36:02.0977253Z shell: sh -e {0}
+build-and-test	Run app	2026-10-29T15:36:02.0977419Z ##[endgroup]
+build-and-test	Run app	2026-10-29T15:36:02.1677668Z Hello, World!
+build-and-test	Post Setup Node.js	﻿2026-10-29T15:36:02.1818000Z Post job cleanup.
+build-and-test	Post Setup Node.js	2026-10-29T15:36:02.1822947Z ##[command]/usr/bin/docker exec  a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c sh -c "cat /etc/*release | grep ^ID"
+build-and-test	Post Setup Node.js	2026-10-29T15:36:02.3661980Z (node:318) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-test	Post Setup Node.js	2026-10-29T15:36:02.3662678Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-test	Post Checkout	﻿2026-10-29T15:36:02.3835899Z Post job cleanup.
+build-and-test	Post Checkout	2026-10-29T15:36:02.3841794Z ##[command]/usr/bin/docker exec  a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c sh -c "cat /etc/*release | grep ^ID"
+build-and-test	Post Checkout	2026-10-29T15:36:02.5414279Z [command]/usr/bin/git version
+build-and-test	Post Checkout	2026-10-29T15:36:02.5447492Z git version 2.39.5
+build-and-test	Post Checkout	2026-10-29T15:36:02.5481991Z Temporarily overriding HOME='/__w/_temp/e3051282-ebd5-4c29-8d81-4474e1d7fec4' before making global git config changes
+build-and-test	Post Checkout	2026-10-29T15:36:02.5483330Z Adding repository directory to the temporary git global config as a safe directory
+build-and-test	Post Checkout	2026-10-29T15:36:02.5485654Z [command]/usr/bin/git config --global --add safe.directory /__w/ci-cd-final-project/ci-cd-final-project
+build-and-test	Post Checkout	2026-10-29T15:36:02.5519889Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-test	Post Checkout	2026-10-29T15:36:02.5554279Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-test	Post Checkout	2026-10-29T15:36:02.5761206Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-test	Post Checkout	2026-10-29T15:36:02.5794963Z http.https://github.com/.extraheader
+build-and-test	Post Checkout	2026-10-29T15:36:02.5800082Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-test	Post Checkout	2026-10-29T15:36:02.5829936Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-test	Post Checkout	2026-10-29T15:36:02.6106927Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-test	Post Checkout	2026-10-29T15:36:02.6161395Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-test	Stop containers	﻿2026-10-29T15:36:02.6537866Z Stop and remove container: 5a545c27aa574fe19b84aa25bfb4c2d4_node18_02feb7
+build-and-test	Stop containers	2026-10-29T15:36:02.6541613Z ##[command]/usr/bin/docker rm --force a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c
+build-and-test	Stop containers	2026-10-29T15:36:04.4741007Z a9260c29c4ef30fdc69a42e909ee5a142ff486ddf8f2f979921541bf0d711f1c
+build-and-test	Stop containers	2026-10-29T15:36:04.4772435Z Remove container network: github_network_96e408ab85b1444e9fd1dbe1c762b2a0
+build-and-test	Stop containers	2026-10-29T15:36:04.4776567Z ##[command]/usr/bin/docker network rm github_network_96e408ab85b1444e9fd1dbe1c762b2a0
+build-and-test	Stop containers	2026-10-29T15:36:04.5864574Z github_network_96e408ab85b1444e9fd1dbe1c762b2a0
+build-and-test	Complete job	﻿2026-10-29T15:36:04.5933470Z Cleaning up orphan processes
+build-and-test	Complete job	2026-10-29T15:36:04.6193611Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
